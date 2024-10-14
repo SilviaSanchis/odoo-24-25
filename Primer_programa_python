@@ -1,0 +1,16 @@
+# -*- coding: utf-8 -*-
+# la tabulacio son literalment les corchetes en python
+
+from odoo import models, fields, api #esto esta importat
+
+class student(models.Model):
+# que tinga la _ es que es un atribut privat de la clase student si o si
+# esto seran dades constants
+	_name = 'school.student' #esto es el nom de la tabla de la base de datos, y ya es
+				 #convertira en _ cuan toque
+	_description = 'Student of the school'
+	
+# esto son columnes en la tabla de base de datos
+	name = fields.Char() #esto es una clase que te una funcio que es char
+	year = fields.Integrar()
+
